@@ -108,16 +108,16 @@ $(function () {
     pauseOnTouch: false,
     horizontal: true, // 수평 스크롤 활성화
     frameGap: 50,
-});
+  });
 
-// Skills Title: 앞으로 스크롤 설정
-$('.txt_anibox .skills_tit').simplyScroll({
+  // Skills Title: 앞으로 스크롤 설정
+  $('.txt_anibox .skills_tit').simplyScroll({
     speed: 4,
     direction: 'forwards', // 앞으로 이동
     pauseOnHover: true,
     pauseOnTouch: false,
     horizontal: true, // 수평 스크롤 활성화
-});
+  });
 
 
   /* Projects lin2 -스크롤 ------------------------------------*/
@@ -181,6 +181,11 @@ $('.txt_anibox .skills_tit').simplyScroll({
     autoplay: {
       delay: 1000,
       // disableOnInteraction: false,
+    },
+    rewind: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
   });
   // swiper2 초기화 여부를 추적할 변수
