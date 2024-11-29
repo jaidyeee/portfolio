@@ -1,0 +1,186 @@
+@charset "utf-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Reenie+Beanie&family=Yeseva+One&display=swap');
+@import url('//fonts.googleapis.com/earlyaccess/nanumbrushscript.css');
+
+/* font-family
+"Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+*/
+
+:root {
+    --main-bg-color: #fff;
+    --main1-bg-color: #F1EDEA;
+    --main2-bg-color: #E9E4E0;
+    --main3-bg-color: #ECE5E0;
+    --main4-bg-color: #C2BBB6;
+    --sub1-green-color: #B9C9CA;
+    --sub2-green-color: #91B1B2;
+    --sub3-green-color: #7F9A9C;
+    --sub4-green-color: #5F8485;
+    --point1-color: #EBF8F9;
+    --point2-color: #EDF5F5;
+    --font-main-color: #333;
+    --gray1-color: #8E8E8E;
+    --gray2-color: #494949;
+    --gray3-color: #767676;
+    --en-rb-font: "Reenie Beanie", cursive;
+    --en-mo-font: "Mona Sans", sans-serif;
+    --en-ys-font: "Yeseva One", serif;
+    --en-dm-font: "DM Serif Display", serif;
+    --kr-p-font: "Pretendard Variable", sans-serif;
+    font-size: 10px;
+    line-height: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Pretendard Variable", sans-serif;
+    background: var(--main-bg-color);
+    font-size: 2.6rem;
+    color: var(--font-main-color);
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: var(--main2-bg-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* 반투명 */
+    box-shadow: 0 2px 10px rgba(123, 123, 123, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+header button {
+    border: none;
+    background: none;
+}
+
+header .container {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    /* width: 152px; height: 50px; */
+    align-items: center;
+}
+
+header .main_menu {
+    position: fixed;
+    top: 80px;
+    right: 0;
+    height: calc(100% - 80px);
+    width: calc(100% - 2px);
+    background: rgba(255, 255, 255, 0.8);
+    /* background: var(--main2-bg-color); */
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    /* transform: translateX(100%); */
+    transition: transform 0.3s ease;
+    z-index: 999;
+    display: none;
+}
+
+header .main_menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: var(--gray2-color);
+    /* padding: 50px 20px; */
+}
+
+header .main_menu ul li {
+    padding-top: 30px;
+}
+
+header .main_menu ul li a {
+    text-decoration: none;
+    font-size: 9rem;
+    font-family: var(--en-dm-font);
+    transition: color 0.3s ease;
+}
+
+header .main_menu ul li a:hover {
+    color: var(--sub3-green-color);
+    /* 포커스 효과 */
+}
+
+.hamburger_slim {
+    background: transparent;
+    position: relative;
+    height: 30px;
+    width: 50px;
+    cursor: pointer;
+
+    &:before,
+    &:after {
+        background: var(--gray3-color);
+        backface-visibility: hidden;
+        content: "";
+        height: 2px;
+        left: 0;
+        transition: 0.75s;
+        width: 50px;
+    }
+
+    &:before {
+        box-shadow: var(--gray3-color) 0 14px 0 0;
+        position: absolute;
+        top: 0;
+    }
+
+    &:after {
+        position: absolute;
+        top: calc(100% - 2px);
+    }
+
+    &:hover {
+
+        &:before {
+            box-shadow: transparent 0 0 0 0;
+            top: 50%;
+            transform: rotate(225deg);
+        }
+
+        &:after {
+            top: 50%;
+            transform: rotate(315deg);
+        }
+    }
+}
+
+header .mode_change {
+    display: flex;
+
+}
+
+header .mode_change img {
+    cursor: pointer;
+    transition: transform 0.6s ease;
+    /* 애니메이션 추가 */
+}
+
+/* hover 상태에서 버튼 회전 */
+.mode_change:hover img {
+    transform: rotate(90deg);
+    /* 360도 회전 */
+}
