@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Around Travel">
+    <meta name="keywords" content="어라운드트래블, 어라운드, 여행사이트, 유럽여행">
+    <meta name="author" content="Gyeoun Jeong">
+    <title>Around Travel</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/8688d334e3.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="nav_bg"></div>
+            <div class="h_top">
+                <div class="container">
+                    <div class="h_left">
+                        <a href="#">
+                            <img src="img/company.png" alt="회사소개아이콘" class="company_icon">
+                            <img src="img/company_icon.svg" alt="회사소개아이콘2" class="company_icon2">
+                            <span>회사소개</span>
+                        </a>
+                    </div><!-- //.h_left -->
+                    <img src="img/logo_main_top_center.svg" alt="어라운드트래블" class="logo_top">
+                    <ul class="h_right">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">마이페이지</a></li>
+                        <li class="menu_btn_top">
+                            <button type="button"><i class="fa-solid fa-bars"></i></button>
+                        </li>
+                    </ul><!-- //.h_right -->
+                </div><!-- //.container -->
+            </div><!-- //.h_top -->
+            <div class="h_bottom">
+                <div class="container">
+                    <h1><a href="#"><img src="img/logo_main.svg" alt="어라운드트래블 로고"></a></h1>
+                    <nav>
+                        <ul class="gnb">
+                            <li><a href="#">국가별 현지투어</a>
+                                <ul class="sub">
+                                    <li><a href="#">프랑스</a></li>
+                                    <li><a href="#">이탈리아</a></li>
+                                    <li><a href="#">영국</a></li>
+                                    <li><a href="#">스위스</a></li>
+                                    <li><a href="#">독일</a></li>
+                                    <li><a href="#">스페인</a></li>
+                                    <li><a href="#">체코·오스트리아·헝가리</a></li>
+                                </ul><!-- //.sub -->
+                            </li>
+                            <li><a href="#">맞춤 여행</a>
+                                <ul class="sub">
+                                    <li><a href="#">커플·신혼(허니문)</a></li>
+                                    <li><a href="#">성지순례</a></li>
+                                    <li><a href="#">프라이빗</a></li>
+                                    <li><a href="#">패밀리 (가족여행)</a></li>
+                                    <li><a href="#">2030 청춘패키지</a></li>
+                                </ul><!-- //.sub -->
+                            </li>
+                            <li><a href="#">테마 여행</a>
+                                <ul class="sub">
+                                    <li><a href="#">소도시</a></li>
+                                    <li><a href="#">문화 예술</a></li>
+                                    <li><a href="#">미식</a></li>
+                                    <li><a href="#">쇼퍼홀릭</a></li>
+                                    <li><a href="#">액티비티</a></li>
+                                    <li><a href="#">시티 투어</a></li>
+                                </ul><!-- //.sub -->
+                            </li>
+                            <li><a href="#">커뮤니티</a>
+                                <ul class="sub">
+                                    <li><a href="#">투어 후기</a></li>
+                                    <li><a href="#">여행 정보</a></li>
+                                    <li><a href="#">현지통신원</a></li>
+                                </ul><!-- //.sub -->
+                            </li>
+                            <li><a href="#">고객센터</a>
+                                <ul class="sub">
+                                    <li><a href="#">공지 사항</a></li>
+                                    <li><a href="#">질문과 답변</a></li>
+                                    <li><a href="#">자주묻는 질문</a></li>
+                                    <li><a href="#">이벤트</a></li>
+                                </ul><!-- //.sub -->
+                            </li>
+                        </ul><!-- //.gnb -->
+                    </nav>
+                    <div class="menu_btn">
+                        <button type="button"><i class="fa-solid fa-bars"></i></button>
+                    </div><!-- //.menu_btn -->
+                </div><!-- //.container -->
+            </div><!-- //.h_bottom -->
+        </header>
+
+        <main>
+            <div class="main_visual">
+                <div class="container">
+                    <h3>어디로 떠나고 싶으세요?</h3>
+                    <div class="main_typo">
+                        <img src="img/around_typo.png" alt="around_typo" class="typo_top">
+                        <div class="search">
+                            <form>
+                                <fieldset>
+                                    <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                    <input type="text" class="srh_info" placeholder="여행지 또는 상품을 검색하세요!">
+                                </fieldset>
+                            </form>
+                        </div><!-- //.search -->
+                        <img src="img/travel_typo.png" alt="travel_typo" class="typo_bottom">
+                    </div><!-- //.main_typo -->
+                    <img src="img/main_airline_deco.svg" alt="main_airline_deco" class="main_airline">
+                </div><!-- //.container -->
+            </div><!-- //.main_visual -->
+
+            <section class="go">
+                <div class="container">
+                    <button type="button" class="prev"><img src="img/left_circle.png" alt="prev_btn"></button>
+                    <article class="country_all ">
+                        <div class="fix"><img src="img/go_air_window.png" alt="비행기창문"></div>
+                        <div class="country_slide swiper">
+                            <ul class="country swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <h3>프랑스</h3>
+                                        <span>France</span>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <h3>이탈리아</h3>
+                                        <span>Italy</span>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <h3>영국</h3>
+                                        <span>England</span>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <h3>스위스</h3>
+                                        <span>Switzerland</span>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <h3>독일</h3>
+                                        <span>Germany</span>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <h3>스페인</h3>
+                                        <span>Spain</span>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <h3>체코</h3>
+                                        <span>Czech</span>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <h3>오스트리아</h3>
+                                        <span>Austria</span>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <h3>헝가리</h3>
+                                        <span>Hungary</span>
+                                    </a>
+                                </li>
+                            </ul><!-- //ul.country -->
+                        </div>
+                    </article><!-- //.country_all -->
+                    <button type="button" class="next"><img src="img/right_circle.png" alt="next_btn"></button>
+                </div><!-- //.container -->
+            </section><!-- //.go -->
+
+            <section class="best_private">
+                <article class="best">
+                    <h2>BEST TRAVEL</h2>
+                    <img src="img/cloud01.svg" alt="cloud_deco01" class="cloud01">
+                    <img src="img/cloud02.svg" alt="cloud_deco02" class="cloud02">
+                    <div class="container2">
+                        <div class="best_btn">
+                            <button type="button" class="prev"><img src="img/left_circle.png" alt="prev_btn"></button>
+                            <button type="button" class="next"><img src="img/right_circle.png" alt="next_btn"></button>
+                        </div><!-- //.best_btn -->
+                        <div class="slide swiper">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card_txt">
+                                            <div class="card_top">
+                                                <h4>서유럽 핵심 4개국 여행</h4>
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                            </div><!-- //.card_top -->
+                                            <p><img src="img/location_icon.svg" alt="location_icon"> 영국 / 프랑스 / 스위스 /
+                                                이탈리아</p>
+                                            <div class="card_bottom">
+                                                <ul class="card_left">
+                                                    <li>
+                                                        <strong>여행기간</strong>
+                                                        <span>9 ~ 15일</span>
+                                                    </li>
+                                                    <li>
+                                                        <strong>출도착 도시</strong>
+                                                        <span>런던 IN - 로마 OUT</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="card_right">
+                                                    <a href="#"><img src="img/card_next_btn.svg"
+                                                            alt="card_next_btn"></a>
+                                                </div>
+                                            </div><!-- //.card_bottom -->
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card_txt">
+                                            <div class="card_top">
+                                                <h4>서유럽 3개국 10일 코스</h4>
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                            </div>
+                                            <p><img src="img/location_icon.svg" alt="location_icon"> 프랑스 / 스위스 / 이탈리아
+                                            </p>
+                                            <div class="card_bottom">
+                                                <ul class="card_left">
+                                                    <li>
+                                                        <strong>여행기간</strong>
+                                                        <span>9 ~ 10일</span>
+                                                    </li>
+                                                    <li>
+                                                        <strong>출도착 도시</strong>
+                                                        <span>파리 IN - 로마 OUT</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="card_right">
+                                                    <a href="#"><img src="img/card_next_btn.svg"
+                                                            alt="card_next_btn"></a>
+                                                </div>
+                                            </div><!-- //.card_bottom -->
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card_txt">
+                                            <div class="card_top">
+                                                <h4>동유럽 핵심 3개국 여행</h4>
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                            </div>
+                                            <p><img src="img/location_icon.svg" alt="location_icon"> 헝가리 / 체코 / 오스트리아
+                                            </p>
+                                            <div class="card_bottom">
+                                                <ul class="card_left">
+                                                    <li>
+                                                        <strong>여행기간</strong>
+                                                        <span>9 ~ 10일</span>
+                                                    </li>
+                                                    <li>
+                                                        <strong>출도착 도시</strong>
+                                                        <span>부다페스트 IN - 비엔나 OUT</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="card_right">
+                                                    <a href="#"><img src="img/card_next_btn.svg"
+                                                            alt="card_next_btn"></a>
+                                                </div>
+                                            </div><!-- //.card_bottom -->
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card_txt">
+                                            <div class="card_top">
+                                                <h4>스페인 일주 11일 코스</h4>
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                            </div>
+                                            <p><img src="img/location_icon.svg" alt="location_icon"> 스페인</p>
+                                            <div class="card_bottom">
+                                                <ul class="card_left">
+                                                    <li>
+                                                        <strong>여행기간</strong>
+                                                        <span>9 ~ 11일</span>
+                                                    </li>
+                                                    <li>
+                                                        <strong>출도착 도시</strong>
+                                                        <span>바르셀로나 IN - OUT</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="card_right">
+                                                    <a href="#"><img src="img/card_next_btn.svg"
+                                                            alt="card_next_btn"></a>
+                                                </div>
+                                            </div><!-- //.card_bottom -->
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card_txt">
+                                            <div class="card_top">
+                                                <h4>청정자연 3개국 여행</h4>
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                            </div>
+                                            <p><img src="img/location_icon.svg" alt="location_icon"> 프랑스 / 스위스 / 독일</p>
+                                            <div class="card_bottom">
+                                                <ul class="card_left">
+                                                    <li>
+                                                        <strong>여행기간</strong>
+                                                        <span>8 ~ 12일</span>
+                                                    </li>
+                                                    <li>
+                                                        <strong>출도착 도시</strong>
+                                                        <span>프랑크푸르트 IN - 파리 OUT</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="card_right">
+                                                    <a href="#"><img src="img/card_next_btn.svg"
+                                                            alt="card_next_btn"></a>
+                                                </div>
+                                            </div><!-- //.card_bottom -->
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card_txt">
+                                            <div class="card_top">
+                                                <h4>남프랑스 / 이탈리아 여행</h4>
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                            </div>
+                                            <p><img src="img/location_icon.svg" alt="location_icon"> 프랑스 / 이탈리아</p>
+                                            <div class="card_bottom">
+                                                <ul class="card_left">
+                                                    <li>
+                                                        <strong>여행기간</strong>
+                                                        <span>9 ~ 11일</span>
+                                                    </li>
+                                                    <li>
+                                                        <strong>출도착 도시</strong>
+                                                        <span>산레모 IN - 밀라노 OUT</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="card_right">
+                                                    <a href="#"><img src="img/card_next_btn.svg"
+                                                            alt="card_next_btn"></a>
+                                                </div>
+                                            </div><!-- //.card_bottom -->
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!-- //.container2 -->
+                    <img src="img/airline_left.svg" alt="airline_left" class="airline_left">
+                </article><!-- //.best -->
+
+                <article class="private">
+                    <h2>PRIVATE TOURS</h2>
+                    <div class="container2">
+                        <div class="slide swiper">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card_txt2">
+                                            <div class="card_top">
+                                                <h4>피렌체+토스카나</h4>
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                            </div>
+                                            <p><img src="img/location_icon.svg" alt="location_icon"> 피렌체 / 토스카나</p>
+                                            <div class="card_tag">
+                                                <strong>#전일투어 #전용차량 #프라이빗</strong>
+                                                <a href="#"><span>자세히 보기</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card_txt2">
+                                            <div class="card_top">
+                                                <h4>옥스포드+코츠월드</h4>
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                            </div>
+                                            <p><img src="img/location_icon.svg" alt="location_icon"> 옥스포드대학교 / 코츠월드
+                                            </p>
+                                            <div class="card_tag">
+                                                <strong>#전일투어 #전용차량 #프라이빗</strong>
+                                                <a href="#"><span>자세히 보기</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card_txt2">
+                                            <div class="card_top">
+                                                <h4>알함브라 궁전</h4>
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                            </div>
+                                            <p><img src="img/location_icon.svg" alt="location_icon"> 그라나다 / 알함브라 궁전</p>
+                                            <div class="card_tag">
+                                                <strong>#반일투어 #대중교통 #프라이빗</strong>
+                                                <a href="#"><span>자세히 보기</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card_txt2">
+                                            <div class="card_top">
+                                                <h4>베네치아 퍼펙트</h4>
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                            </div>
+                                            <p><img src="img/location_icon.svg" alt="location_icon"> 베네치아 본섬 / 무라노 섬 /
+                                                부라노 섬</p>
+                                            <div class="card_tag">
+                                                <strong>#전일투어 #대중교통 #프라이빗</strong>
+                                                <a href="#"><span>자세히 보기</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card_txt2">
+                                            <div class="card_top">
+                                                <h4>세비야 + 론다</h4>
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                            </div>
+                                            <p><img src="img/location_icon.svg" alt="location_icon"> 세비야 / 론다</p>
+                                            <div class="card_tag">
+                                                <strong>#전일투어 #전용차량 #프라이빗</strong>
+                                                <a href="#"><span>자세히 보기</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card_txt2">
+                                            <div class="card_top">
+                                                <h4>베르사유 궁전</h4>
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                            </div>
+                                            <p><img src="img/location_icon.svg" alt="location_icon"> 베르사유 궁전</p>
+                                            <div class="card_tag">
+                                                <strong>#반일투어 #대중교통 #프라이빗</strong>
+                                                <a href="#"><span>자세히 보기</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="best_btn">
+                            <button type="button" class="prev"><img src="img/left_circle.png" alt="prev_btn"></button>
+                            <button type="button" class="next"><img src="img/right_circle.png" alt="next_btn"></button>
+                        </div><!-- //.best_btn -->
+                    </div><!-- //.container2 -->
+                </article><!-- //.private -->
+            </section><!-- //.best_private -->
+
+            <section class="thema">
+                <div class="container">
+                    <h2 class="t1">Thema</h2>
+                    <img src="img/thema_people01.svg" alt="t_people01" class="t_people01">
+                    <h2 class="t2">Travel</h2>
+                    <img src="img/thema_people02.svg" alt="t_people02" class="t_people02">
+                    <img src="img/travel_bag.svg" alt="travel_bag" class="travel_bag">
+
+                    <div class="contents">
+                        <div class="thema_left">
+                            <div class="container3">
+                                <div class="thema_main_hidden">
+                                    <div class="sub_txt3">
+                                        <strong>Czech</strong>
+                                        <h4>체스키 끄르믈로프 차량 투어</h4>
+                                        <p>동유럽에서 가장 아름다운 중세 소도시</p>
+                                        <a href="#"><span>자세히 보기</span></a>
+                                    </div>
+                                    <img src="img/thema_main_photo_hidden.png" alt="테마메인히든">
+                                </div><!-- //.thema_main_hidden -->
+                                <div class="thema_sub1">
+                                    <img src="img/sub_photo01.png" alt="테마서브01">
+                                    <div class="sub_txt1">
+                                        <strong>Italy</strong>
+                                        <h4>남부 환상 투어 1박 2일 코스</h4>
+                                        <p>지중해 해안마을에서 보내는 꿈같은 1박 2일</p>
+                                        <a href="#"><span>자세히 보기</span></a>
+                                    </div>
+                                </div>
+                                <div class="thema_sub2">
+                                    <div class="sub_txt2">
+                                        <strong>France</strong>
+                                        <h4>몽생 미셸 1박 2일 투어</h4>
+                                        <p>바다 한 가운데에 뜬 미카엘 천사의 기적</p>
+                                        <a href="#"><span>자세히 보기</span></a>
+                                    </div>
+                                    <img src="img/sub_photo02.png" alt="테마서브02">
+                                </div>
+                            </div><!-- //.container3 -->
+                        </div><!-- //.thema_left -->
+                        <div class="thema_right">
+                            <div class="thema_main">
+                                <img src="img/thema_main_photo.png" alt="테마메인">
+                                <div class="main_txt">
+                                    <strong>Czech</strong>
+                                    <h4>체스키 끄르믈로프 1박 2일 차량 투어</h4>
+                                    <p>동유럽에서 가장 아름다운 중세 소도시</p>
+                                    <a href="#"><span>자세히 보기</span></a>
+                                </div><!-- //.main_txt -->
+                            </div><!-- //.thema_main -->
+                        </div><!-- //.thema_right -->
+                    </div><!-- //.contents -->
+                </div><!-- //.container -->
+            </section><!-- //.thema -->
+
+            <section class="from">
+                <div class="container">
+                    <h2><span>From.A</span></h2>
+                    <div class="tab">
+                        <ul class="from_sns_all">
+                            <li><a href="#">
+                                    <div class="from_sns">
+                                        <img src="img/from_photo01.png" alt="from_sns_photo01">
+                                        <div class="from_txt">
+                                            <div class="from_top">
+                                                <p><img src="img/location_icon.svg" alt="location_icon"> 영국 - 런던
+                                                    (LONDON)</p>
+                                                <div class="bubble">
+                                                    <img src="img/d_icon.svg" alt="comment_icon"><b>12</b>
+                                                </div><!-- //.bubble -->
+                                            </div><!-- //.from_top -->
+                                            <h4>영국에서 가장 오래된 시장, 버러 마켓</h4>
+                                            <div class="from_bottom">
+                                                <img src="img/guide_jieun_p.png" alt="guide_p01">
+                                                <div class="guide_info">
+                                                    <strong>이지은 가이드</strong>
+                                                    <span>jieun_lee@aroundtravel.kr</span>
+                                                </div><!-- //.guide_info -->
+                                            </div><!-- //.from_bottom -->
+                                        </div><!-- //.from_txt -->
+                                    </div><!-- //.from_sns -->
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="from_sns">
+                                        <img src="img/from_photo02.png" alt="from_sns_photo02">
+                                        <div class="from_txt">
+                                            <div class="from_top">
+                                                <p><img src="img/location_icon.svg" alt="location_icon"> 이탈리아 - 베네치아
+                                                    (VENEZIA)</p>
+                                                <div class="bubble">
+                                                    <img src="img/d_icon.svg" alt="comment_icon"><b>8</b>
+                                                </div>
+                                            </div>
+                                            <h4>2024 베니스 비엔날레 현장 스케치</h4>
+                                            <div class="from_bottom">
+                                                <img src="img/guide_vivid_p.png" alt="guide_p02">
+                                                <div class="guide_info">
+                                                    <strong>선명해 가이드</strong>
+                                                    <span>vivid_sun@aroundtravel.kr</span>
+                                                </div>
+                                            </div>
+                                        </div><!-- //.from_txt -->
+                                    </div><!-- //.from_sns -->
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="from_sns">
+                                        <img src="img/from_photo03.png" alt="from_sns_photo03">
+                                        <div class="from_txt">
+                                            <div class="from_top">
+                                                <p><img src="img/location_icon.svg" alt="location_icon"> 프랑스 - 파리
+                                                    (PARIS)</p>
+                                                <div class="bubble">
+                                                    <img src="img/d_icon.svg" alt="comment_icon"><b>9</b>
+                                                </div>
+                                            </div>
+                                            <h4>파리에 열린 해리포터 팝업 스토어</h4>
+                                            <div class="from_bottom">
+                                                <img src="img/guide_potter_p.png" alt="guide_p02">
+                                                <div class="guide_info">
+                                                    <strong>김혜리 가이드</strong>
+                                                    <span>potter@aroundtravel.kr</span>
+                                                </div>
+                                            </div>
+                                        </div><!-- //.from_txt -->
+                                    </div><!-- //.from_sns -->
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="from_sns">
+                                        <img src="img/from_photo04.png" alt="from_sns_photo04">
+                                        <div class="from_txt">
+                                            <div class="from_top">
+                                                <p><img src="img/location_icon.svg" alt="location_icon"> 독일 - 뮌헨
+                                                    (MUNICH)</p>
+                                                <div class="bubble">
+                                                    <img src="img/d_icon.svg" alt="comment_icon"><b>16</b>
+                                                </div>
+                                            </div>
+                                            <h4>맥주 축제의 원조! 옥토버페스트</h4>
+                                            <div class="from_bottom">
+                                                <img src="img/guide_oh_p.png" alt="guide_p04">
+                                                <div class="guide_info">
+                                                    <strong>오한술 가이드</strong>
+                                                    <span>oh1alcohol@aroundtravel.kr</span>
+                                                </div>
+                                            </div>
+                                        </div><!-- //.from_txt -->
+                                    </div><!-- //.from_sns -->
+                                </a></li>
+                        </ul><!-- //ul.from_sns_all -->
+                        <div class="from_btn_all">
+                            <button type="button"><img src="img/from_btn_01.png" alt="food_btn"></button>
+                            <button type="button"><img src="img/from_btn_02.png" alt="shop_btn"></button>
+                            <button type="button"><img src="img/from_btn_03.png" alt="art_btn"></button>
+                            <button type="button"><img src="img/from_btn_04.png" alt="traffic_btn"></button>
+                            <button type="button"><img src="img/from_btn_05.png" alt="fiesta_btn"></button>
+                            <button type="button"><img src="img/from_btn_06.png" alt="info_btn"></button>
+                        </div><!-- //.from_btn_all -->
+                    </div><!-- //.tab -->
+                    <img src="img/from_traveler_deco.svg" alt="traveler_illust" class="traveler_deco">
+                </div><!-- //.container -->
+            </section><!-- //.from -->
+
+            <section class="community">
+                <div class="container">
+                    <img src="img/family_illust.svg" alt="family_illust" class="family_illust">
+                    <h2>COMMUNITY</h2>
+                    <div class="comm_right">
+                        <div class="notice_container">
+                            <div class="notice">
+                                <div class="notice_tit">
+                                    <strong>Notice</strong>
+                                    <img src="img/notice_speaker_icon.svg" alt="speaker_icon">
+                                </div><!-- //.notice_tit -->
+                                <ul class="notice_roll">
+                                    <li><a href="#">[영국] 2024 영국지점 투어 스페셜 할인 이벤트</a></li>
+                                    <li><a href="#">공지사항입니다 01</a></li>
+                                    <li><a href="#">공지사항입니다 02</a></li>
+                                    <li><a href="#">공지사항입니다 03</a></li>
+                                    <li><a href="#">공지사항입니다 04</a></li>
+                                </ul><!-- //.notice_roll -->
+                                <div class="notice_btn">
+                                    <button type="button" class="notice_prev"><img src="img/notice_prev_btn.svg"
+                                            alt="notice_prev_button"></button>
+                                    <button type="button" class="notice_stop"><img src="img/notice_stop_btn.svg"
+                                            alt="notice_stop_button"></button>
+                                    <button type="button" class="notice_next"><img src="img/notice_next_btn.svg"
+                                            alt="notice_next_button"></button>
+                                </div><!-- //.notice_btn -->
+                            </div><!-- //.notice -->
+                        </div><!-- //.notice_container -->
+                        <div class="comm_btn_all">
+                            <ul class="comm_select">
+                                <li><a href="#">
+                                        <img src="img/com_icon_bag.svg" alt="투어후기">
+                                        <h5>REVIEW</h5>
+                                        <span>투어 후기</span>
+                                        <p>어라운드 트래블 고객님들의<br>솔직하고 생생한 후기</p>
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="img/com_icon_tinfo.svg" alt="여행정보">
+                                        <h5>TRAVEL INFO</h5>
+                                        <span>여행 정보</span>
+                                        <p>국가별 관광지 정보와<br>여행 꿀팁 알려드릴게요</p>
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="img/com_icon_review.svg" alt="질문과답변">
+                                        <h5>1:1 Q&A</h5>
+                                        <span>질문과 답변</span>
+                                        <p>무엇을 도와드릴까요?<br>궁금하신 사항을 남겨주세요</p>
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="img/com_icon_event.svg" alt="이벤트">
+                                        <h5>EVENT</h5>
+                                        <span>이벤트</span>
+                                        <p>어라운드 트래블의<br>다양한 이벤트 소개</p>
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="img/com_icon_coupon.svg" alt="할인쿠폰">
+                                        <h5>COUPON</h5>
+                                        <span>할인 쿠폰</span>
+                                        <p>어라운드 트래블 고객한정<br>각종 할인 쿠폰과 혜택</p>
+                                    </a></li>
+                            </ul><!-- //.comm_select -->
+                        </div><!-- //.comm_btn_all -->
+                    </div><!-- //.comm_right -->
+
+                </div><!-- //.container -->
+            </section><!-- //.community -->
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="f_top">
+                    <ul class="sns_top">
+                        <li><a href="#"><img src="img/sns_icon_youtube.svg" alt="youtube"></a></li>
+                        <li><a href="#"><img src="img/sns_icon_instagram.svg" alt="instagram"></a></li>
+                        <li><a href="#"><img src="img/sns_icon_facebook.svg" alt="facebook"></a></li>
+                        <li><a href="#"><img src="img/sns_icon_x.svg" alt="x"></a></li>
+                    </ul>
+                    <ul class="f_menu_top">
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">여행약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">오시는 길</a></li>
+                    </ul><!-- //.f_menu -->
+                </div><!-- //.f_top -->
+                <div class="f_left">
+                    <div class="f_left_top">
+                        <img src="img/logo_color.svg" alt="어라운드트래블">
+                        <ul class="f_menu">
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">여행약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">오시는 길</a></li>
+                        </ul><!-- //.f_menu -->
+                    </div><!-- //.f_left_top -->
+                    <div class="f_left_mid">
+                        <ul class="f_info">
+                            <li>회사명 : (주) 어라운드 트래블 </li>
+                            <li>대표이사 : 송원준</li>
+                            <li>사업자 등록번호 : 105-88-03993 <a href="#">사업자번호조회 &gt;</a></li>
+                            <li>주소 : 서울시 마포구 동교로 51길, 지하 1,2층</li>
+                            <li>개인정보관리책임자 : 송원준</li>
+                            <li>통신판매업신고 : 제2014-서울마포-0923호 </li>
+                            <li>고객센터 : 070-8650-6375 </li>
+                            <li><a href="#">이메일 : around_t@aroundtravel.kr</a></li>
+                        </ul><!-- //.f_info -->
+                    </div><!-- //.f_left_mid -->
+                    <div class="f_left_bottom">
+                        <ul class="sns">
+                            <li><a href="#"><img src="img/sns_icon_youtube.svg" alt="youtube"></a></li>
+                            <li><a href="#"><img src="img/sns_icon_instagram.svg" alt="instagram"></a></li>
+                            <li><a href="#"><img src="img/sns_icon_facebook.svg" alt="facebook"></a></li>
+                            <li><a href="#"><img src="img/sns_icon_x.svg" alt="x"></a></li>
+                        </ul>
+                        <p>ⓒ Around Travel. All Rights Reserved.</p>
+                    </div><!-- //.f_left_bottom -->
+                </div><!-- //.f_left -->
+                <div class="f_right">
+                    <div class="f_right_top">
+                        <button type="button"><img src="img/service_icon_kakao.svg" alt="카카오톡문의"> 카카오톡 문의</button>
+                        <button type="button"><img src="img/service_icon_mail.svg" alt="이메일문의"> 이메일 문의</button>
+                    </div><!-- //.f_right_top -->
+                    <div class="f_right_bottom">
+                        <div class="customer_info">
+                            <div class="customer_center">
+                                <img src="img/service_icon_customer.svg" alt="고객센터문의">
+                                <h5>고객센터 상담시간</h5>
+                            </div><!-- //.customer_center -->
+                            <p>오전 09:00 ~ 18:00</p>
+                            <span>(점심 시간 : 12: 30 ~ 13:30)</span>
+                            <b>토,일요일 및 공휴일 휴무</b>
+                        </div>
+                    </div><!-- //.f_right_bottom -->
+                </div><!-- //.f_right -->
+            </div><!-- //.container -->
+        </footer>
+    </div><!-- //.wrap -->
+</body>
+
+</html>
