@@ -1,0 +1,408 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* airplane : 출도착 비행기 */
+.airplane {
+    width: 50%;
+    height: 50%;
+    /* background: red; */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.airplane .red_air {
+    position: absolute;
+    left: 40%;
+    top: -200px;
+    opacity: 0;
+    animation: red_air 2s 2s 1 forwards;
+}
+
+@keyframes red_air {
+    0% {
+        left: 40%;
+        top: -200px;
+        opacity: 0;
+    }
+
+    100% {
+        left: 0;
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.airplane .puple_air {
+    position: absolute;
+    left: 70%;
+    top: -250px;
+    animation: puple_air 2s 1 forwards;
+}
+
+@keyframes puple_air {
+    0% {
+        left: 70%;
+        top: -250px;
+        opacity: 0;
+    }
+
+    50% {
+        left: 0;
+        top: 0;
+        opacity: 1;
+    }
+
+    100% {
+        left: -80%;
+        top: 0;
+        opacity: 0;
+    }
+}
+
+/* board : 출도착 안내판 */
+.board_left {
+    position: absolute;
+    top: 60px;
+    right: 580px;
+    width: 165px;
+    height: 228px;
+    background: url(../img/board.png);
+    cursor: pointer;
+}
+
+.board_right {
+    position: absolute;
+    top: 210px;
+    right: 280px;
+    width: 165px;
+    height: 228px;
+    background: url(../img/board.png);
+}
+
+.board_left.on {
+    animation: board_auto 2s forwards;
+}
+
+.board_right.on {
+    animation: board_auto2 2s forwards;
+}
+
+@keyframes board_auto {
+    0% {
+        background-image: url(../img/board.png);
+    }
+
+    25% {
+        background-image: url(../img/board_auto01.png);
+    }
+
+    50% {
+        background-image: url(../img/board_auto02.png);
+    }
+
+    70% {
+        background-image: url(../img/board_auto03.png);
+    }
+
+    100% {
+        background-image: url(../img/board_auto04.png);
+    }
+}
+
+@keyframes board_auto2 {
+    0% {
+        background-image: url(../img/board_auto04.png);
+    }
+
+    25% {
+        background-image: url(../img/board.png);
+    }
+
+    50% {
+        background-image: url(../img/board_auto02.png);
+    }
+
+    70% {
+        background-image: url(../img/board_auto01.png);
+    }
+
+    100% {
+        background-image: url(../img/board_auto05.png);
+    }
+}
+
+/* catch_me : 경찰과 나쁜놈 */
+.catch_me .poilce_m {
+    position: absolute;
+    width: 241px;
+    height: 258px;
+    left: 900px;
+    top: 160px;
+    background: url(../img/policeman.png);
+    /* z-index: 10; */
+}
+
+.catch_me .poilce_m:hover {
+    background-image: url(../img/policeman_effect.png);
+}
+
+.catch_me.on .poilce_m {
+    animation: catch_p 3s forwards;
+}
+
+@keyframes catch_p {
+    0% {
+        left: 900px;
+        top: 160px;
+    }
+
+    90% {
+        left: 1200px;
+        top: 360px;
+        opacity: 1;
+    }
+
+    100% {
+        left: 1200px;
+        top: 360px;
+        opacity: 0;
+    }
+}
+
+.catch_me .badboy {
+    position: absolute;
+   /*  width: 120px;
+    height: 258px; */
+    width: 284px;
+    height: 286px;
+    left: 1240px;
+    top: 350px;
+    background: url(../img/bad_boy.png) no-repeat;
+    /* z-index: 9; */
+}
+
+.catch_me .badboy:hover {
+    background-image: url(../img/badboy_imoji.png);
+}
+
+.catch_me.on .badboy {
+   animation: catch 3s forwards;
+ 
+}
+
+@keyframes catch {
+    0% {
+        background-image: url(../img/bad_boy.png) 
+    }
+
+    90% {
+        background-image: url(../img/bad_boy.png) 
+    }
+
+    100% {
+        opacity: 1;
+        background-image: url(../img/catch_me_click.png)
+    }
+}
+
+.badboy_bag {
+    position: absolute;
+    width: 57px;
+    height: 66px;
+    right: 530px;
+    bottom: 350px;
+    background: url(../img/money_bag.png);
+}
+
+.machine_left {
+    position: absolute;
+    width: 122px;
+    height: 216px;
+    bottom: 430px;
+    right: 590px;
+    background: url(../img/machine.png);
+}
+
+.machine_right {
+    position: absolute;
+    width: 122px;
+    height: 216px;
+    bottom: 380px;
+    right: 500px;
+    background: url(../img/machine.png);
+}
+
+.catch_me:hover .machine_right {
+    background-image: url(../img/machine2.png);
+}
+
+
+/* music : 음악듣는 남자 */
+.music {
+    position: absolute;
+    bottom: 70px;
+    right: 100px;
+    z-index: 10;
+    width: 104px;
+    height: 254px;
+    background: url(../img/music_m.png) left bottom no-repeat;
+    /* display: none; */
+}
+
+.music.on {
+    background-image: url(../img/music_m2.png);
+}
+
+/* cart : 카트 이동중인 사람 */
+.porter {
+    position: absolute;
+    width: 128px;
+    height: 204px;
+    top: 440px;
+    left: 1100px;
+    z-index: 10;
+    background: url(../img/porter.png);
+}
+
+.porter.on {
+    animation: cart 10s 1 linear;
+}
+
+@keyframes cart {
+    0% {
+        top: 440px;
+        left: 1100px;
+    }
+
+    100% {
+        top: 900px;
+        left: 70px;
+    }
+}
+
+
+/* joy_fam : 환호하는 엄마와 아이 */
+.joy_mom {
+    position: absolute;
+    top: 280px;
+    left: 500px;
+    z-index: 10;
+    width: 200px;
+    height: 233px;
+    background: url(../img/joy_mom.png);
+
+}
+
+.joy_child {
+    position: absolute;
+    top: 310px;
+    left: 480px;
+    z-index: 10;
+    width: 200px;
+    height: 233px;
+    background: url(../img/joy_child.png);
+}
+
+.joy_mom:hover {
+    background-image: url(../img/joy_mom_click.png);
+}
+
+.joy_child:hover {
+    background-image: url(../img/joy_child_effect.png);
+}
+
+/* love : 헤어진 여자 */
+.love_woman {
+    position: absolute;
+    width: 104px;
+    height: 189px;
+    bottom: 125px;
+    left: 1280px;
+    z-index: 9;
+    background: url(../img/love_woman.png);
+}
+
+.love_woman_bag {
+    position: absolute;
+    width: 42px;
+    height: 96px;
+    bottom: 120px;
+    left: 1340px;
+    z-index: 10;
+    background: url(../img/love_woman_bag.png);
+}
+
+.love_woman:hover {
+    background-image: url(../img/love_imoji.png);
+}
+
+.love_woman.on {
+    animation: broken 2s 1;
+}
+
+@keyframes broken {
+    0% {
+        background-image: url(../img/love_woman_crying.png);
+    }
+
+    25% {
+        background-image: url(../img/leve_broken_imoji01.png);
+    }
+
+    50% {
+        background-image: url(../img/leve_broken_imoji02.png);
+    }
+
+    100% {
+        background-image: url(../img/leve_broken_imoji03.png);
+    }
+}
+
+/* sleeping : 졸고있는 남자 */
+.sleep_m {
+    position: absolute;
+    width: 133px;
+    height: 225px;
+    bottom: 120px;
+    left: 290px;
+    z-index: 10;
+    background: url(../img/sleeping_m.png);
+    cursor: pointer;
+}
+
+.sleep_m_bag {
+    position: absolute;
+    width: 45px;
+    height: 47px;
+    bottom: 110px;
+    left: 350px;
+    z-index: 8;
+    background: url(../img/sleeping_m_bag.png);
+}
+
+.sleep_m.on {
+    animation: sleeping 3s 2;
+}
+
+@keyframes sleeping {
+    0% {
+        background-image: url(../img/sleeping_m2.png);
+    }
+
+    30% {
+        background-image: url(../img/sleeping_imoji01.png);
+    }
+
+    70% {
+        background-image: url(../img/sleeping_imoji02.png);
+    }
+
+    100% {
+        background-image: url(../img/sleeping_imoji03.png);
+    }
+}

@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: url(../img/main_bg.png) center bottom;
+}
+
+.wrap a{
+    position: absolute;
+    top: 30px;
+    right: 200px;
+    display: block;
+}
+
+.main_btn{
+    position: absolute;
+    width: 219px; height: 69px;
+    top: 30px; right: 300px;
+    z-index: 10;
+    background: url(../img/main_btn.png);
+}
+
+/* 건축&가구 */
+.window {
+    position: absolute;
+    left: 0px;
+    top: -120px;
+    z-index: 10;
+    /* display: none; */
+}
+
+.ground {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* display: none; */
+}
+.wall{
+    position: absolute;
+    right: -20px;
+    top: 0;
+    /* display: none; */
+}
+.pillar{
+    position: absolute;
+    top: -140px;
+    left: 870px;
+    /* display: none; */
+}
+.pillar2{
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    z-index: 9;
+    /* display: none; */
+}
+
+.bench01{
+    position: absolute;
+    bottom: 60px;
+    left: 300px;
+    /* display: none; */
+}
+.bench02{
+    position: absolute;
+    top: 520px;
+    left: 560px;
+    /* display: none; */
+}
+.bench03{
+    position: absolute;
+    top: 360px;
+    left: 800px;
+    /* display: none; */
+}
+.bench04{
+    position: absolute;
+    top: 630px;
+    right: 400px;
+    /* display: none; */
+}
+.bench05{
+    position: absolute;
+    bottom: -20px;
+    right: 600px;
+    /* display: none; */
+}
+.display{
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    z-index: 10;
+}
+.plant{
+    position: absolute;
+    top: 580px;
+    right: 120px;
+}
+.plant2{
+    position: absolute;
+    top: 160px;
+    left: 960px;
+}
+
+
+/* 고정 - 사람들 */
+
+.family{
+    position: absolute;
+    bottom: 120px;
+    left: 80px;
+    z-index: 10;
+}
+.traveler{
+    position: absolute;
+    top: 430px;
+    left: 800px;
+}
+.stewar {
+    position: absolute;
+    bottom: 0;
+    left: 840px;
+    z-index: 11;
+}
